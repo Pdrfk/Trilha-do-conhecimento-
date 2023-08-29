@@ -1,0 +1,20 @@
+#!/bin/bash
+read local
+#!Pesquisa localização
+    
+# Chamar a função para exibir previsões do tempo
+exibir_previsao_tempo "Brasil" 30 "Ensolarado"
+exibir_previsao_tempo "Estados Unidos" 22 "Nublado"
+exibir_previsao_tempo "França" 18 "Chuva"
+exibir_previsao_tempo "Japão" 28 "Parcialmente Nublado"
+exibir_previsao_tempo "Austrália" 25 "Céu Limpo"
+
+# Função para exibir previsão do tempo
+exibir_previsao_tempo() {
+    echo "Previsão do Tempo para $1 :"
+    echo "Temperatura: $2°C"
+    echo "Condição: $3"
+}
+
+
+
